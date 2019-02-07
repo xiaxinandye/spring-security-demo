@@ -178,13 +178,13 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
 }
 ```
 
-此时，"/"请求全部允许通过，访问http://localhost:8080，就可以进入正常的首页了：
+此时，"/"请求全部允许通过，访问<a href="localhost:8080">localhost:8080</a>，就可以进入正常的首页了：
 
 ![](showImages/搜狗截图20190207120345.png)
 
 此时我们为了使不同的登录用户，查看到不同的武林秘籍（类似于普通用户和管理员），就可以让不同的登录用户根据一些规则成为**特定的角色**，此过程称为**认证**。然后再**授权**给不同的角色不同的访问权限。
 
-此时我们还可以访问http://localhost:8080/level1/1，查看普通的武功秘籍信息，接下来我们就来实现**认证**与**授权**。
+此时我们还可以访问<a href="http://localhost:8080/level1/1">localhost:8080/level1/1</a>，查看普通的武功秘籍信息，接下来我们就来实现**认证**与**授权**。
 
 - 认证：这一过程显然是发生在登录中的，首先添加基于登录表单的认证：
 
@@ -199,7 +199,7 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
   }
   ```
 
-  此时login请求会进入默认的登录表单认证，点击登录按钮，访问：http://localhost:8080/login，结果如下：
+  此时login请求会进入默认的登录表单认证，点击登录按钮，访问：<a href="localhost:8080/login">localhost:8080/login</a>，结果如下：
 
   ![](showImages/搜狗截图20190207143556.png)
 
@@ -235,7 +235,7 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
   }
   ```
 
-  此时访问http://localhost:8080/level/1请求，就会要求进行身份验证：
+  此时访问<a href="localhost:8080/level/1">localhost:8080/level/1</a>请求，就会要求进行身份验证：
 
   ![](showImages/搜狗截图20190207143556.png)
 
