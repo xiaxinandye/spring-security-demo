@@ -9,7 +9,7 @@
 
 # 二、Demo
 
-使用 IDEA 通过 Spring Initializer 创建一个Spring Boot项目并选中 security 、web、thymeleaf模块。并导入[实验素材](experiment)（存储在我的github上,链接无效是因为图片、文件我是上传到github上的，请进入我的github观看）。
+使用 IDEA 通过 Spring Initializer 创建一个Spring Boot项目并选中 security 、web、thymeleaf模块。并导入[实验素材](experiment)（存储在我的github上,链接无效是因为图片、文件我是上传到github上的，请进入我的[github](https://github.com/xiaxinandye/spring-security-demo)观看）。
 
 pom.xml:
 
@@ -147,7 +147,7 @@ public class KungfuController {
 }
 ```
 
-此时我们访问：http://localhost:8080/，结果如下：
+此时我们访问：http://localhost:8080/
 
 ![](showImages/搜狗截图20190207115457.png)
 
@@ -288,7 +288,7 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
 1. 用户登录后才显示注销按钮，未登录显示登录按钮。
 2. 用户登录成功，显示 `xxx用户你好`,并根据用户角色的权限显示不同的首页。
 
-首先，我们已经引入了thymeleaf 和 security 的整合依赖，然后为welcome.html 加上 xmlns:sec="http://www.thymeleaf.org/extras/spring-security"，这样当我们输入sec 时（security 的标签）会有自动提示。
+首先，我们已经引入了thymeleaf 和 security 的整合依赖，然后为welcome.html 加上 `xmlns:sec="http://www.thymeleaf.org/extras/spring-security"`，这样当我们输入sec 时（security 的标签）会有自动提示。
 
 修改好welcome.html 如下：
 
